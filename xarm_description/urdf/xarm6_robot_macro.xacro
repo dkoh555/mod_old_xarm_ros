@@ -64,7 +64,7 @@
       />
     </xacro:if>
 
-        <!-- Additional Base and Trash Bin for the xArm -->
+    <!-- Additional Base and Trash Bin for the xArm -->
 
     <joint name="base_joint" type="fixed">
       <origin xyz="-0.13 0 0" rpy="0 0 0"/>
