@@ -6,7 +6,7 @@
   <xacro:arg name="effort_control" default="false"/>
   <xacro:arg name="velocity_control" default="false"/>
   <!-- To add realsense d435i and gripper, set 'add_realsense_d435i' = true -->
-  <xacro:arg name="add_realsense_d435i" default="false"/> 
+  <xacro:arg name="add_realsense_d435i" default="true"/> 
   <xacro:arg name="use_gazebo_camera" default="false"/>
 
   <!-- load xarm6 robot -->
