@@ -349,6 +349,22 @@
     <child
       link="${prefix}link_eef" />
   </joint>
-  
+
+  <link name="${prefix}cam_link">
+    </link>
+
+  <joint
+    name="${prefix}joint_cam"
+    type="fixed">
+    <origin
+      xyz="0.07 -0.04 0.03"
+      rpy="0 0 1.5708" />
+    <parent
+      link="${prefix}link_eef" />
+    <child
+      link="${prefix}cam_link" />
+  </joint>
+
   </xacro:macro>
+
 </robot>

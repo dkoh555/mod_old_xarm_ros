@@ -1,3 +1,9 @@
+# PLEASE TAKE NOTE BEFORE DOING ANYTHING ELSE
+   To install use this code, follow the instructions as shown below, except when they ask you to use git clone make sure to insert the ssh address of this specific workspace (git@github.com:dkoh555/mod_old_xarm_ros.git).
+
+## Notes for this branch of the xarm_ros package
+   Modified the URDF files to incldue the base and camera link so that it has compatibility with Minshen's realsense camera code.
+
 For simplified Chinese version: [简体中文版](./ReadMe_cn.md)    
 
 ## Important Notice:
