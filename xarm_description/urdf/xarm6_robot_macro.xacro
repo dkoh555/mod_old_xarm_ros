@@ -101,16 +101,16 @@
 
     <link name="bin_link">
       <visual>
-        <origin xyz="0 0 0.075" rpy="0 0 0"/>
+        <origin xyz="0 0 0.155" rpy="0 0 0"/>
         <geometry>
-          <box size="0.15 0.26 0.15"/>
+          <box size="0.15 0.33 0.31"/>
         </geometry>
         <material name="Silver"/>
       </visual>
       <collision>
-        <origin xyz="0 0 0.075" rpy="0 0 0"/>
+        <origin xyz="0 0 0.155" rpy="0 0 0"/>
         <geometry>
-          <box size="0.15 0.26 0.15"/>
+          <box size="0.15 0.33 0.31"/>
         </geometry>
       </collision>
       <inertial>
