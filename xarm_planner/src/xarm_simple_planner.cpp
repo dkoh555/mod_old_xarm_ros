@@ -25,7 +25,7 @@
 /* Used for Cartesian path computation, please modify as needed: */
 const double jump_threshold = 0.0;
 const double eef_step = 0.005;
-const double maxV_scale_factor = 0.3; // check!!
+const double maxV_scale_factor = 0.95; // check!!
 
 
 namespace rvt = rviz_visual_tools;
@@ -118,6 +118,8 @@ void XArmSimplePlanner::show_trail(bool plan_result)
 
 bool XArmSimplePlanner::do_pose_plan(xarm_planner::pose_plan::Request &req, xarm_planner::pose_plan::Response &res)
 {
+  group.setMaxVelocityScalingFactor(maxV_scale_factor);
+  
   group.setPoseTarget(req.target);
   
   ROS_INFO("xarm_planner received new target: [ position: (%f, %f, %f), orientation: (%f, %f, %f, %f)", \
