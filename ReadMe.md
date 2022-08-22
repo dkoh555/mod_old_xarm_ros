@@ -1,8 +1,13 @@
-# PLEASE TAKE NOTE BEFORE DOING ANYTHING ELSE
-   To install use this code, follow the instructions as shown below, except when they ask you to use git clone make sure to insert the ssh address of this specific workspace (git@github.com:dkoh555/mod_old_xarm_ros.git).
+# TAKE NOTE BEFORE DOING ANYTHING (Damien's additions)
+   To install and use this code, follow the instructions as shown below, except when they ask you to use git clone their repository make sure to insert the address of this repository instead (git@github.com:dkoh555/mod_old_xarm_ros.git).
+   Once you have installed everything, you may realise that git status will indicate that the SDK has been changed. This is an submodule induced error and you will need to restore it to its intended/original state for this package to work.
 
-## Notes for this branch of the xarm_ros package
-   Modified the URDF files to include the mobile robot base and camera link so that it has compatibility with Minshen's realsense camera code.
+## Good to know (like, seriously)
+   There are two major adjustments that set this repo apart from the official xarm_ros one:
+   1. Modified the URDF files to include the Bozhon (mobile robot base) and trashbin attachment for collision detection and path planning of the xarm, and added a camera link (cam_link) for compatibility with Minshen's object detection camera code (needed for transformations).
+   2. Unless the firmware of the xarm has been updated since I have left, the xarm should still be running on an older version of firmware that the latest version of the official xarm repo is NOT compatible with. Hence this repo is based on an older commit of the official xarm one.
+
+# THE REST BELOW IS NOT ME SO GO NUTS AND HAVE FUN :)
 
 ## Important Notice:
 &ensp;&ensp;After using xArm C++ SDK as sub-module, the use of **/xarm/set_tool_modbus** service has been modified, compared with old version, the redundant '***0x09***' byte in response data has been ***removed***！  
